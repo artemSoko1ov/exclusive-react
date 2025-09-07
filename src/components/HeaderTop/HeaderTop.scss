@@ -1,0 +1,22 @@
+.header-top {
+  background-color: var(--color-black);
+  padding-block: fluid-to-laptop(20, 15);
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    color: var(--color-text-01);
+    position: relative;
+
+    &-link {
+      font-weight: 600;
+      color: var(--color-text-01);
+    }
+  }
+
+
+  &__select {
+    position: absolute;
+    right: 0;
+  }
+}

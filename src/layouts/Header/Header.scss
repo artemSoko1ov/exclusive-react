@@ -1,3 +1,15 @@
 .header {
+  padding-block: fluid-to-laptop(53, 40) fluid-to-laptop(21, 16);
 
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+
+    &-func{
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+    }
+  }
 }

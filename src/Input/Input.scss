@@ -1,0 +1,24 @@
+.input {
+  width: fluid(320, 250);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+  padding: 5px 10px;
+  background-color: var(--color-gray);
+  border-radius: var(--border-radius-m);
+
+  &__box {
+    width: 100%;
+    border: none;
+    background: transparent;
+
+    &:focus-within {
+      outline: none;
+    }
+  }
+
+  &:focus-within {
+    @include focus-visible();
+  }
+}

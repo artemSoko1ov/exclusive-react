@@ -1,0 +1,20 @@
+.header-top {
+  background-color: var(--color-black);
+  padding-block: fluid-to-laptop(20, 15);
+}
+.header-top__inner {
+  display: flex;
+  justify-content: center;
+  color: var(--color-text-01);
+  position: relative;
+}
+.header-top__inner-link {
+  font-weight: 600;
+  color: var(--color-text-01);
+}
+.header-top__select {
+  position: absolute;
+  right: 0;
+}
+
+/*# sourceMappingURL=HeaderTop.css.map */
