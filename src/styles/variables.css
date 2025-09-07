@@ -1,6 +1,18 @@
 :root {
   --color-white: #FFFFFF;
   --color-black: #000000;
+  --color-red-01: #DB4444;
+  --color-red-02: #E07575;
+  --color-gray: #F5F5F5;
+  --color-cream: #FEFAF1;
+  --color-green: #00FF66;
+  --color-text-01: #FAFAFA;
+  --color-text-02: #7D8184;
+  --border-radius-m: 4px;
+  --box-shadow: 0 1 13 0 rgba(0, 0, 0, 0.05);
+  --font-family-base:"Poppins", sans-serif;
+  --container-padding-x: 16px;
+  --section-padding-y: fluid(70, 40);
 }
 
 /*# sourceMappingURL=variables.css.map */
