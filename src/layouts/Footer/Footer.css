@@ -1,3 +1,28 @@
-
+.footer {
+  background-color: var(--color-black);
+  color: var(--color-text-01);
+}
+.footer__menu {
+  display: flex;
+  align-items: self-start;
+  column-gap: fluid-to-laptop(116, 100);
+  padding-block: fluid(106, 35) fluid(80, 30);
+}
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(20, 12);
+}
+.footer__menu-title {
+  color: inherit;
+  margin-bottom: fluid(32, 20);
+}
+.footer__menu-item {
+  list-style: none;
+}
+.footer__menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
 /*# sourceMappingURL=Footer.css.map */
