@@ -93,9 +93,6 @@ const Footer = () => {
                 loading="lazy"
               />
             </div>
-            <div className="footer__menu-social">
-
-            </div>
           </div>
         </div>
       </div>
