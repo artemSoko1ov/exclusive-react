@@ -1,5 +1,6 @@
 .input {
-  width: fluid(320, 250);
+//  width: fluid(320, 250);
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,13 +10,18 @@
   border-radius: var(--border-radius-m);
 
   &__box {
-    width: 100%;
+    flex: 1;
     border: none;
     background: transparent;
 
     &:focus-within {
       outline: none;
     }
+  }
+
+  &--not-filled {
+    background: transparent;
+    border: 1px solid currentColor;
   }
 
   &:focus-within {

@@ -26,7 +26,7 @@
 }
 
 @mixin focus-visible {
-  outline: 1px dashed var(--color-black);
+  outline: 1px dashed currentColor;
   outline-offset: 4px;
   transition-duration: 0s !important;
 }
