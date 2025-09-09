@@ -28,3 +28,7 @@
     @include focus-visible();
   }
 }
+
+.header__inner-input{
+  width: fluid(310, 270);
+}

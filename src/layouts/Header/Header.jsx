@@ -17,7 +17,7 @@ const Header = (props) => {
           <Logo />
           <HeaderMenu />
           <div className="header__inner-func">
-            <Input type="search" icon="search" />
+            <Input className="header__inner-input" type="search" icon="search" placeholder="What are you looking for?" />
             <Button icon={HeartIcon} />
             <Button icon={CartIcon} />
           </div>

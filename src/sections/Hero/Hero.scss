@@ -1,0 +1,8 @@
+.hero {
+  &__aside {
+    border-right: var(--border-bottom);
+    padding-top: fluid(53, 30);
+    @include fluid-text(21, 18);
+    line-height: fluid(50, 15);
+  }
+}
