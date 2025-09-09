@@ -1,4 +1,5 @@
 import './Hero.scss'
+import HeroSlider from "@/components/HeroSlider";
 
 const Hero = (props) => {
   const {} = props
@@ -22,6 +23,7 @@ const Hero = (props) => {
           ))}
         </ul>
       </aside>
+      <HeroSlider />
     </section>
   )
 }

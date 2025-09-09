@@ -1,7 +1,16 @@
 .hero {
+  display: flex;
+  align-items: center;
+  gap: fluid(53, 40);
+  padding-top: 0;
+  padding-bottom: fluid(180, 100);
+
   &__aside {
+    flex-shrink: 5;
+    width: 100%;
     border-right: var(--border-bottom);
-    padding-top: fluid(53, 30);
+    padding-top: fluid(50, 10);
+    padding-right: fluid(100, 10);
     @include fluid-text(21, 18);
     line-height: fluid(50, 15);
   }

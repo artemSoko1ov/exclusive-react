@@ -1,0 +1,30 @@
+.hero-slider {
+  padding-top: fluid(40, 10);
+  &__slide {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-black);
+
+    &-header {
+      display: flex;
+      align-items: center;
+      column-gap: fluid(32, 20);
+    }
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      row-gap: fluid(29, 15);
+      padding-block: fluid(75, 50) fluid(30, 20);
+      padding-left: fluid(80, 55);
+    }
+
+    &-title {
+      color: var(--color-text-01);
+    }
+
+    &-description {
+      color: var(--color-text-01);
+    }
+  }
+
+}
