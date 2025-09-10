@@ -12,14 +12,16 @@ const Hero = (props) => {
     'Sports & Outdoor',
     'Baby’s & Toys',
     'Groceries & Pets',
-    'Health & Beauty',
   ]
   return (
     <section className="hero">
       <aside className="hero__aside">
         <ul className="hero__list">
           {categories.map((category, index) => (
-            <li className="hero__category" key={index}>{category}</li>
+            <li
+              className="hero__category"
+              key={index}
+            >{category}</li>
           ))}
         </ul>
       </aside>

@@ -1,28 +1,17 @@
-.hero-slider {
-  padding-top: fluid(40, 10);
-}
-.hero-slider__slide {
-  display: flex;
-  align-items: center;
-  background-color: var(--color-black);
-}
-.hero-slider__slide-header {
-  display: flex;
-  align-items: center;
-  column-gap: fluid(32, 20);
-}
-.hero-slider__slide-inner {
-  display: flex;
-  flex-direction: column;
-  row-gap: fluid(29, 15);
-  padding-block: fluid(75, 50) fluid(30, 20);
-  padding-left: fluid(80, 55);
-}
-.hero-slider__slide-title {
-  color: var(--color-text-01);
-}
-.hero-slider__slide-description {
-  color: var(--color-text-01);
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 51 |     @include fluid-text(21, 18);
+ *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   HeroSlider.scss 51:5  root stylesheet */
 
-/*# sourceMappingURL=HeroSlider.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 51 \2502      @include fluid-text(21, 18);\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   HeroSlider.scss 51:5  root stylesheet";
+}
