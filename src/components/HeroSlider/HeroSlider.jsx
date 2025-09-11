@@ -2,6 +2,7 @@ import './HeroSlider.scss'
 import Iphone from '@/assets/images/iphone-14.jpg'
 import AppleIcon from '@/assets/icons/apple-icon.svg?react'
 import {useEffect, useState} from "react";
+import classNames from "classnames";
 
 const dataSlides = [
   {
@@ -31,12 +32,12 @@ const dataSlides = [
   },
 ]
 const HeroSlider = () => {
-  const [imageIndex, setImageIndex] = useState(1)
+  const [imageIndex, setImageIndex] = useState(0)
 
   useEffect(() => {
     const interval = setInterval(() => {
       setImageIndex(index => (index === dataSlides.length - 1 ? 0 : index + 1));
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
@@ -71,6 +72,18 @@ const HeroSlider = () => {
               alt="banner"
             />
           </div>
+        ))}
+      </div>
+      <div className="hero-slider__pagination">
+        {dataSlides.map((_, index) => (
+          <button
+            className={classNames("hero-slider__pagination-button",)}
+            type="button"
+            onClick={() => {
+              setImageIndex(index)
+            }}
+          >
+          </button>
         ))}
       </div>
     </div>

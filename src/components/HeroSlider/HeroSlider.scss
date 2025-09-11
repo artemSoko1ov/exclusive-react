@@ -47,6 +47,23 @@
     }
   }
 
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    margin: fluid(20, 15) auto;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+
+    &-button {
+      border: none;
+      border-radius: 100%;
+      background-color: var(--color-gray);
+    }
+  }
+
   &__link {
     @include fluid-text(21, 18);
     font-weight: 400;
