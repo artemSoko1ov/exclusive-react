@@ -93,10 +93,10 @@ const Footer = () => {
                 loading="lazy"
               />
             </div>
-            <div className="footer__menu-social">
-
-            </div>
           </div>
+        </div>
+        <div className="footer__copyright">
+          <p>&copy; Copyright Rimel 2022. All right reserved</p>
         </div>
       </div>
     </footer>
