@@ -1,9 +1,9 @@
 /* Error: Undefined mixin.
  *    ,
- * 68 |     @include fluid-text(21, 18);
+ * 83 |     @include fluid-text(21, 18);
  *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *    '
- *   HeroSlider.scss 68:5  root stylesheet */
+ *   HeroSlider.scss 83:5  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 68 \2502      @include fluid-text(21, 18);\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   HeroSlider.scss 68:5  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 83 \2502      @include fluid-text(21, 18);\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   HeroSlider.scss 83:5  root stylesheet";
 }

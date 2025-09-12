@@ -1,8 +1,7 @@
 import './HeroSlider.scss'
 import Iphone from '@/assets/images/iphone-14.jpg'
 import AppleIcon from '@/assets/icons/apple-icon.svg?react'
-import {useEffect, useState} from "react";
-import classNames from "classnames";
+import {useEffect, useState} from "react"
 
 const dataSlides = [
   {
@@ -11,22 +10,22 @@ const dataSlides = [
     image: Iphone,
   },
   {
-    title: 'iPhone 13 Series',
+    title: 'iPhone 14 Series',
     description: 'Up to 10% \noff Voucher',
     image: Iphone,
   },
   {
-    title: 'iPhone 13 Series',
+    title: 'iPhone 15 Series',
     description: 'Up to 10% \noff Voucher',
     image: Iphone,
   },
   {
-    title: 'iPhone 13 Series',
+    title: 'iPhone 16 Series',
     description: 'Up to 10% \noff Voucher',
     image: Iphone,
   },
   {
-    title: 'iPhone 13 Series',
+    title: 'iPhone 17 Series',
     description: 'Up to 10% \noff Voucher',
     image: Iphone,
   },
@@ -36,8 +35,8 @@ const HeroSlider = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setImageIndex(index => (index === dataSlides.length - 1 ? 0 : index + 1));
-    }, 10000);
+      setImageIndex(index => (index === dataSlides.length - 1 ? 0 : index + 1))
+    }, 8000);
 
     return () => clearInterval(interval);
   }, []);
@@ -77,12 +76,14 @@ const HeroSlider = () => {
       <div className="hero-slider__pagination">
         {dataSlides.map((_, index) => (
           <button
-            className={classNames("hero-slider__pagination-button",)}
+            className="hero-slider__pagination-button"
             type="button"
             onClick={() => {
               setImageIndex(index)
             }}
+            key={index}
           >
+            {index === imageIndex && <span className="hero-slider__pagination-dot" />}
           </button>
         ))}
       </div>
