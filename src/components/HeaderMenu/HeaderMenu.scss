@@ -11,8 +11,21 @@
   &__link {
     @include fluid-text(21, 16);
 
+    position: relative;
     color: inherit;
     text-decoration: none;
     border-radius: var(--border-radius-m);
+
+    &.is-active {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-text-02);
+      }
+    }
   }
 }

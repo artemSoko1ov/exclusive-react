@@ -1,24 +1,12 @@
 import './HeaderMenu.scss'
-import classNames from "classnames";
+import { NavLink } from "react-router-dom"
 
 const HeaderMenu = (props) => {
   const menuItems = [
-    {
-      label: 'Home',
-      href: '/',
-    },
-    {
-      label: 'Contact',
-      href: '/contact',
-    },
-    {
-      label: 'About',
-      href: '/about',
-    },
-    {
-      label: 'Sign Up',
-      href: '/sign-up',
-    },
+    { label: 'Home', to: '/' },
+    { label: 'Contact', to: '/contact' },
+    { label: 'About', to: '/about' },
+    { label: 'Sign Up', to: '/sign-up' },
   ]
   const {
     url
@@ -26,19 +14,19 @@ const HeaderMenu = (props) => {
   return (
     <nav className="header-menu">
       <ul className="header-menu__list">
-        {menuItems.map(({label, href}, index) => (
+        {menuItems.map(({ label, to }, index) => (
           <li
             className="header-menu__item"
             key={index}
           >
-            <a
-              className={classNames('header-menu__link', {
-                'is-active': href === url
-              })}
-              href={href}
+            <NavLink
+              to={to}
+              className={({ isActive }) =>
+                "header-menu__link" + (isActive ? " is-active" : "")
+              }
             >
               {label}
-            </a>
+            </NavLink>
           </li>
         ))}
       </ul>
